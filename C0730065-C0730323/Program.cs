@@ -6,10 +6,36 @@ using System.Threading.Tasks;
 
 namespace C0730065_C0730323
 {
-    class Program
+    class program
+    // Parminder Kaur Bhangu (C0730065)
+    //Ravneet Kaur (C0730323)
     {
-        static void Main(string[] args)
+
+
+
+        public static void Main(string[] args)
+
         {
+            DelegateExercises This = new DelegateExercises();
+            This.Method2();
         }
+
+
+        public class DelegateExercises
+        {
+            public delegate void MyDelegate();
+            void Method1()
+            {
+                Console.WriteLine("Method1");
+                Console.ReadLine();
+            }
+            public void Method2()
+            {
+                MyDelegate myDelegate = new MyDelegate(Method1);
+                myDelegate();
+            }
+        }
+
     }
 }
+
