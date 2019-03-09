@@ -26,13 +26,13 @@ namespace C0730065_C0730323
     {
         void Method1()
         {
-            System.Console.WriteLine("Method1");
+           
         }
         public void Method3()
         {
             MyDelegate myDelegate = new MyDelegate(Method1);
-            myDelegate();
-            Console.WriteLine(myDelegate.ToString());
+            
+            System.Console.WriteLine(myDelegate.ToString());
         }
     }
 
