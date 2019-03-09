@@ -17,31 +17,31 @@ namespace C0730065_C0730323
 
         {
             DelegateExercises This = new DelegateExercises();
-           
+
             This.Method2(50);
         }
-        }
-
-    
-        public class DelegateExercises
-        {
-          
-           public delegate void MyDelegate(int i);
-           public void Method1(int i)
-        {
-                Console.WriteLine("Method1");
-              Console.WriteLine(i);
-              Console.ReadLine();
-            }
-            
-             public void Method2(int i)
-        {
-                MyDelegate myDelegate = new MyDelegate(Method1);
-             
-              myDelegate(50);
-        }
-        }
-
     }
+
+
+    public class DelegateExercises
+    {
+
+        public delegate void MyDelegate(int i);
+        public void Method1(int i)
+        {
+            Console.WriteLine("Method1");
+            Console.WriteLine(i);
+            Console.ReadLine();
+        }
+
+        public void Method2(int i)
+        {
+            MyDelegate myDelegate = new MyDelegate(Method1);
+
+            myDelegate(50);
+        }
+    }
+
+}
 
 
