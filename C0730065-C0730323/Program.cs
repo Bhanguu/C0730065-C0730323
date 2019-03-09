@@ -16,8 +16,8 @@ namespace C0730065_C0730323
         public static void Main(string[] args)
 
         {
-            DelegateExercises de = new DelegateExercises();
-            de.Method3();
+            DelegateExercises This = new DelegateExercises();
+            This.Method3();
             Console.Read();
         }
     }
@@ -32,6 +32,7 @@ namespace C0730065_C0730323
         {
             MyDelegate myDelegate = new MyDelegate(Method1);
             myDelegate();
+            Console.WriteLine(myDelegate.ToString());
         }
     }
 
