@@ -18,7 +18,7 @@ namespace C0730065_C0730323
         {
             DelegateExercises This = new DelegateExercises();
 
-            This.Method2(50);
+            This.Method2(60);
         }
     }
 
@@ -38,7 +38,7 @@ namespace C0730065_C0730323
         {
             MyDelegate myDelegate = new MyDelegate(Method1);
 
-            myDelegate(50);
+            myDelegate(60);
         }
     }
 
